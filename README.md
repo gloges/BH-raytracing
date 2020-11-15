@@ -1,9 +1,16 @@
 # BH-raytracing
 
+Create images of Kerr black holes.
+
+## Sample output
 
 
 
-## Kerr metric
+
+
+## Computation background
+
+### Kerr metric
 
 The metric for a black hole with mass _M_ and angular momentum _J_ in Boyer-Lindquist coordinates (_t,r,θ,φ_) is
 
@@ -16,7 +23,7 @@ where
 For convenience choose units where <img src="https://render.githubusercontent.com/render/math?math=G_NM = 1">, so that <img src="https://render.githubusercontent.com/render/math?math=r_s=2"> and <img src="https://render.githubusercontent.com/render/math?math=a\in[-1,1]">. With this choice the inner and outer horizons are located at <img src="https://render.githubusercontent.com/render/math?math=r_\pm = 1 \pm \sqrt{1-a^2}">.
 
 
-## Conserved quantities and null geodesics
+### Conserved quantities and null geodesics
 
 There are two "obvious" conserved quantities associated to the Killing vectors <img src="https://render.githubusercontent.com/render/math?math=\partial_t"> and <img src="https://render.githubusercontent.com/render/math?math=\partial_\phi">, which are the energy <img src="https://render.githubusercontent.com/render/math?math=E=-p_t"> and angular momentum <img src="https://render.githubusercontent.com/render/math?math=L_z=-p_\phi">. There is also a third conserved quantity, the Carter constant:
 
@@ -35,11 +42,11 @@ Since the above coordinates are singular at the outer horizon, it is useful to s
 <img src="https://render.githubusercontent.com/render/math?math=\large\qquad \mathrm{d}v = \mathrm{d}t %2B \frac{r^2 %2B a^2}{\Delta}\,\mathrm{d}r \,, \quad \mathrm{d}\varphi = \mathrm{d}\phi %2B \frac{a}{\Delta}\,\mathrm{d}r \,.">
 
 
-## Images
+### Images
 
 Images are built based on a "pinhole camera" design; an array of pixels (dimensions <img src="https://render.githubusercontent.com/render/math?math=\Delta x\times\Delta y">) is located a distance <img src="https://render.githubusercontent.com/render/math?math=\Delta r"> behind the aperature. For each pixel the values of <img src="https://render.githubusercontent.com/render/math?math=E,L_z,Q"> are found for the geodesic connecting that pixel to the aperature. The geodesic equation is then integrated out until the outer horizon is crossed, the light escapes to a larger radial coordinate than where it started, or an "accretion disk" located in the equitorial plane is hit.
 
-Four angles position the camera. The aperature is located at
+Four angles (_α,β,γ,δ_) position the camera. The aperature is located at
 
 <img src="https://render.githubusercontent.com/render/math?math=\large\qquad \mathbf{r} = R_x(\beta)\cdot R_z(\alpha)\cdot (r_0\hat{\mathbf{z}})">
 
@@ -47,5 +54,5 @@ and pixel (_i,j_) is located at
 
 <img src="https://render.githubusercontent.com/render/math?math=\large\qquad \mathbf{r} = R_x(\beta)\cdot R_z(\alpha)\cdot \left(R_y(\delta)\cdot R_z(\gamma)\cdot \langle\delta x_i,\delta y_j, \Delta r \rangle %2B r_0\hat{\mathbf{z}}\right) \,.">
 
-
+Redshift is computed by comparing <img src="https://render.githubusercontent.com/render/math?math=\omega = -u^\mu p_\mu"> at the source to at the observer. Both are assumed to be massive so that <img src="https://render.githubusercontent.com/render/math?math=u_\text{s}^2 = u_\text{o}^2 = -1">. Notice that the choice of affine parameter drops out of the ratio <img src="https://render.githubusercontent.com/render/math?math=\frac{\omega_\text{s}}{\omega_\text{o}}">.
 
