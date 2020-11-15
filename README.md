@@ -4,7 +4,7 @@ Create images of Kerr black holes.
 
 ## Sample output
 
-![](images/ex1.png)
+<img src="images/ex1.png" width="800">
 
 
 
