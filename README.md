@@ -2,9 +2,23 @@
 
 Create images of Kerr black holes.
 
+#### What you get:
+- Euler angles
+- Accurate null geodesics
+- Redshift and blackbody spectra
+- Pixel images
+
+#### What you _don't_ get:
+- Speed: optimization who?
+- Realistic accretion disk structure/dynamics: its literally a paper-thin annulus
+- gifs
+
 ## Sample output
 
-<img src="images/ex1.png" width="800">
+Pixel images         |  w/ Gaussian blur
+:-------------------:|:-------------------:
+![](images/ex1.png)  |  ![](images/ex1.png)
+![](images/ex1.png)  |  ![](images/ex1.png)
 
 
 
