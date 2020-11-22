@@ -17,8 +17,8 @@ Create images of Kerr black holes.
 
 Pixel images         |  w/ Gaussian blur
 :-------------------:|:-------------------:
-![](images/ex1.png)  |  ![](images/ex1.png)
-![](images/ex1.png)  |  ![](images/ex1.png)
+![](images/ex1.png)  |  ![](images/ex1blur.png)
+![](images/ex2.png)  |  ![](images/ex2blur.png)
 
 
 
