@@ -59,7 +59,7 @@ $$ \mathbf{r} = R_x(\beta)\cdot R_z(\alpha)\cdot (r_0\hat{\mathbf{z}}) $$
 
 and pixel (_i,j_) is located at
 
-$$ \mathbf{r} = R_x(\beta)\cdot R_z(\alpha)\cdot \left(R_y(\delta)\cdot R_z(\gamma)\cdot \langle\delta x_i,\delta y_j, \Delta r \rangle + r_0\hat{\mathbf{z}}\right) \\,. $$
+$$ \mathbf{r}_{ij} = R_x(\beta)\cdot R_z(\alpha)\cdot \left(R_y(\delta)\cdot R_z(\gamma)\cdot \langle\delta x_i,\delta y_j, \Delta r \rangle + r_0\hat{\mathbf{z}}\right) \\,. $$
 
 Redshift is computed by comparing $\omega = -u^\mu p_\mu$ at the source to at the observer. Both are assumed to be massive so that $u_\text{s}^2 = u_\text{o}^2 = -1$. Notice that the choice of affine parameter drops out of the ratio $\frac{\omega_\text{s}}{\omega_\text{o}}$.
 
