@@ -2,16 +2,9 @@
 
 Create images of Kerr black holes.
 
-#### What you get:
-- Euler angles
-- Accurate null geodesics
-- Redshift and blackbody spectra
-- Pixel images
+#### Overview:
+The geodesic equation is numerically solved for null rays near a Kerr black hole. The position and orientation of the camera are chosen and for each pixel the fate of the geodesic is determined, with an equitorial annulus providing a simple model of an accretion disk.
 
-#### What you _don't_ get:
-- Speed: optimization who?
-- Realistic accretion disk structure/dynamics: its literally a paper-thin annulus
-- gifs
 
 ## Sample output
 
